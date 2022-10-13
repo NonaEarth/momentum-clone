@@ -1,0 +1,179 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+.active {
+    color: tomato;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg {
+    object-fit: cover;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+}
+
+img {
+    object-fit: cover;
+    top: 0;
+    z-index: -2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 5px;
+    margin: 0px;
+    font-weight: 450;
+}
+
+h2 {
+    font-size: 70px;
+    color: white;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+#login-form {
+    padding-bottom: 5px;
+}
+
+#login-form input {
+    margin-right: 5px;
+}
+
+#login-form button {
+    width: 45px;
+}
+
+#todo-list {
+    margin: 0px;
+}
+
+#todo-form {
+    margin-bottom: 15px;
+}
+
+#quote {
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+    margin: 20px 0px;
+    width: 40%;
+    text-align: center;
+}
+
+#todo-list li {
+    margin: 6px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.squareButton {
+    font-size: 12px;
+    width: 45px;
+    height: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#todo-form input {
+    padding: 6px 45px;
+}
+
+#login-form input {
+    width: 160px;
+}
+
+input {
+    all:unset;
+    padding: 6px 0px;
+    text-align: center;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 450;
+    color: white;
+    background-color: rgba(20, 20, 20, 0.85);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.655);
+}
+
+#todo-form input::placeholder {
+    width: fit-content;
+}
+
+button {
+    all:unset;
+    padding: 6px 5px;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 13px;
+    font-weight: 450;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: opacity linear .1s;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+#quote span:first-child {
+    color: rgb(230, 230, 230);
+}
+
+#weather {
+    font-size: 16px;
+    font-weight: 450;
+}
+
+ul {
+    all:unset;
+}
