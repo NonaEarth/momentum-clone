@@ -14,7 +14,9 @@ let deleteToDo = function(event) {
 
     const li = (event.target).parentElement;
     li.remove();
-    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)); //VV 작동함
+    // toDos = toDos.filter((toDo) => toDo.id !== li.id); //!! 작동안함
+    // toDos = toDos.filter((toDo) => toDo.id != li.id); //VV 작동함
     saveToDos();
 }
 

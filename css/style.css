@@ -8,12 +8,32 @@
     font-display: swap;
 }
 
+@keyframes opacitydown {
+    from {opacity: 100;}
+    to {opacity: 0;}
+}
+
+@keyframes opacityup {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.bg-opacity-control,
+.opacity-control {
+    opacity: 0;
+}
+
 .active {
     color: tomato;
 }
 
 .hidden {
     display: none;
+}
+
+html {
+    background-color: rgb(21, 21, 21);
 }
 
 body {
