@@ -1,7 +1,7 @@
 let clock = function () {
     
     let getClock = function (clock) {
-        console.log(clock);
+        // console.log(clock);
         const date = new Date();
         const hours = date.getHours();
         const minutes = date.getMinutes();
