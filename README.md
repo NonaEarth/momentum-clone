@@ -1,3 +1,3 @@
 # Momentum Clone
 
-A Project with a course in Nomad Coders.
+A Project done with a course in Nomad Coders.
